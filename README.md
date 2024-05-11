@@ -9,7 +9,8 @@ simple tool for TGA images
    2. Include header file in your code, uses *include* macro:
    `#include "tgatool.h"`
    3. Use function from header, whith them usage (more details in tgatool.h);
-   4. Fun.
+   4. Indicate the object module in parametr list, when you compile your main program: `gcc -o program.bin ./main.c ./tgatool.o`
+   5. Fun.
 
 ## FOR WHAT?
    This tool was created for educational purposes. You can use it to study 
