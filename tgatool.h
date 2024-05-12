@@ -61,7 +61,7 @@ TGAimage *create_image(short width, short height, image_types type);
 //NOTE: Creates a new empty image for the pointer.
 
 TGAimage *open_image(char *filename);
-//USAGE: open_image("./myfatcock.tga");
+//USAGE: newimg1 = open_image("./myfatcock.tga");
 //NOTE: Opening existing tga-image.
 
 int set_pixel(TGAimage *dest, unsigned short x, unsigned short y, int clr);
@@ -74,18 +74,18 @@ void set_mode(TGAimage *image, image_types new_mode);
 //NOTE: Change header of image for new mode.
 
 short get_width(TGAimage *image);
-//USAGE:  printf("width:%hi\n",get_width(newimg));
+//USAGE:  printf("width:%hi\n",get_width(newimg1));
 //NOTE: Returning the width of image;
 
 short get_height(TGAimage *image);
-//USAGE:  printf("height:%hi\n",get_height(newimg));
+//USAGE:  printf("height:%hi\n",get_height(newimg1));
 
 int save_image(TGAimage *image, char *filename);
-//USAGE:  save_image(newimg, "untitled.tga");
+//USAGE:  save_image(newimg1, "untitled.tga");
 //NOTE:	  Writing the picure into file system (but image not remove form RAM)
 
 void eject_image(TGAimage *existing_image);
-//USAGE:  save_image(newimg);
+//USAGE:  save_image(newimg1);
 //NOTE:	  Remove image from RAM. Like function free(), but for images.
 
 #endif
